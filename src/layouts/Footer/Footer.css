@@ -1,0 +1,42 @@
+footer{
+    margin: 0 auto;
+    background-color: darkred;
+}
+
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer{
+
+}
+
+.all-rights-reserved{
+    margin-left: 50px;
+}
+
+.circle-bot{
+    margin-left: 5vw;
+}
+
+.strikethrough{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media{
+    display:flex;
+    justify-content: center;
+}
+
+.link{
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.logotype{
+    width:5%;
+    margin-right: 50px;
+}

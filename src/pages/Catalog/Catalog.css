@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: flex;
+    position: sticky;
+}
+
+aside {
+    width: 20vw;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    top: 15vh;
+    border-right: 0.2vw solid darkred;
+    padding: 5vh 3vw 0;
+    text-align: left;
+    margin-bottom: -14.5%;
+}
+
+.searchSec {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.searchSec input[type=text] {
+    width: 70%;
+    height: 100%;
+    border-radius: 1vw;
+    border: none;
+    padding-left: 1vw;
+    outline-style: none;
+    color: black;
+    background-color: #EFF0F0;
+}
+
+.searchSec button {
+    width: 25%;
+    height: 100%;
+    background-color: darkred;
+    border: none;
+    border-radius: 1vw;
+    font-weight: bold;
+    transition: 0.3s;
+    color: white;
+}
+
+.searchSec button:hover {
+    background-color: transparent;
+    border: 0.2vw solid darkred;
+}
+
+aside input[type=text]::placeholder {
+    color: darkred;
+}
+
+aside h2 {
+    margin-bottom: 1vh;
+}
+
+.sortCat {
+    display: flex;
+}
+
+.sortCat input {
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+
+.sortCat input:checked {
+    accent-color: darkred;
+}
+
+.sortCat label {
+    cursor: pointer;
+}
+
+.sortCat:last-of-type {
+    margin-bottom: 3vh;
+}
+
+aside p {
+    font-weight: bold;
+}
+
+aside p span {
+    font-weight: normal;
+}
