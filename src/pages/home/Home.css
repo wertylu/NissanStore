@@ -61,8 +61,14 @@
     font-size: 25px;
     transition-duration: 1s;
     align-items: center;
-    margin: -50px auto 80px;
+    margin: 0 auto 50px;
 }
 .viewmore:hover{
     background-color: darkred;
+}
+
+
+.hidden{
+    margin: -70px 50px 50px;
+
 }
