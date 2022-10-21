@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import logotype from "./../../icons/nissan-home.jpg"
 import firstCar from "./../../icons/nissan-first.jpg"
 import secondCar from "./../../icons/nissan-second.jpg"
@@ -6,7 +6,23 @@ import thirdCar from "./../../icons/nissan-third.jpg"
 import "./Home.css"
 
 
+
 function Home(){
+    const [condition, setCondition] = useState(false);
+    const [text, setText] = useState("View more")
+
+    const clickHandler = () => {
+        if (condition === false){
+            setCondition(true);
+            setText("View less")
+        }
+        else{
+            setCondition(false);
+            setText("View more")
+        }
+
+    };
+
     return(
         <div>
             <div className="heading">
@@ -43,7 +59,19 @@ function Home(){
                         just from the scrapyard fresh and undamaged</p>
                 </div>
             </section>
-            <button className = "viewmore">View More</button>
+            {condition && <div className="hidden">
+                <h2>Interesting fact</h2>
+                <p>The Skyline name originated from Prince automobile company,
+                    which developed and sold the Skyline line of sedans before merging with Nissan-Datsun.
+                    The original Skyline was launched by the Prince Motor Company in April 1957 and was powered
+                    by a 1.5-litre engine. The later iteration launched in 1964 called the Prince Skyline GT
+                    was powered by a 2.0-litre G7 inline-6 engine shared with the up market Prince Gloria sedan.
+                    Two road going versions were built. The S54A which had a single carburettor engine rated at
+                    78 kW (106 PS; 105 hp) and the S54B which had a triple carburettor engine rated at 92 kW (125 PS; 123 hp)
+                    and production totalled 100 units.</p>
+            </div>}
+            <button className = "viewmore" onClick={clickHandler}>{text}</button>
+
         </div>
     )
 }

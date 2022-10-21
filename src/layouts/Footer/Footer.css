@@ -1,6 +1,8 @@
 footer{
-    margin: 0 auto;
+    margin-top: 25%;
+    padding: 0 5vw;
     background-color: darkred;
+
 }
 
 .top-footer{
@@ -14,6 +16,7 @@ footer{
 
 .all-rights-reserved{
     margin-left: 50px;
+    padding-top: 20px;
 }
 
 .circle-bot{
