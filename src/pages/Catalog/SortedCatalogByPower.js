@@ -5,10 +5,10 @@ import "./Catalog.css"
 import axios from "axios";
 import Loader from "../../props/loader/Loader";
 
+function SortedCatalogByPrice() {
 
-function Catalog(){
-    const [cars, setCars] = useState([{ id: 1, name: 'Not found', price: 0, power:0, image: '', description: '' }])
-    useEffect(() => { axios.get('http://localhost:8080/catalog/').then(result => setCars(result.data)) }, []);
+    const [cars, setCars] = useState([{ id: 1, name: 'Not found', price: 0, image: '', description: '' }])
+    useEffect(() => { axios.get('http://localhost:8080/catalog/sortByPower').then(res => setCars(res.data)) }, []);
 
     const [value, setValue] = useState('')
 
@@ -16,8 +16,8 @@ function Catalog(){
         return item.name.toLowerCase().includes(value.toLowerCase())
     })
 
-    const [loading, setLoading] = useState(true)
-    useEffect(() => {setTimeout(() => {setLoading(false)}, 2000)}, [])
+    const [loading, setloading] = useState(true)
+    useEffect(() => { setTimeout(() => { setloading(false) }, 1000) }, [])
 
 
     return (
@@ -52,9 +52,6 @@ function Catalog(){
             }
         </>
     )
-
 }
 
-
-
-export default Catalog;
+export default SortedCatalogByPrice;

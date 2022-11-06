@@ -103,3 +103,14 @@ aside p span {
     height: 40px;
     margin-top: 20px;
 }
+
+.sortCat a {
+    color: darkred;
+    text-decoration: none;
+}
+
+.sortCat li:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}

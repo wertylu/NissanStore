@@ -7,6 +7,9 @@ import Cart from './pages/Cart/Cart.js'
 import Catalog from './pages/Catalog/Catalog.js'
 import SinglePage from './pages/Catalog/SinglePage.js';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SortedCatalogByName from "./pages/Catalog/SortedCatalogByName";
+import SortedCatalogByPrice from "./pages/Catalog/SortedCatalogByPrice";
+import SortedCatalogByPower from "./pages/Catalog/SortedCatalogByPower";
 function App() {
     return (
         <Router>
@@ -14,7 +17,10 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Catalog" element={<Catalog />} />
-                <Route path="/car" element={<SinglePage />} />
+                <Route path="/sortedCatalogByName" element={<SortedCatalogByName />} />
+                <Route path="/sortedCatalogByPrice" element={<SortedCatalogByPrice />} />
+                <Route path="/sortedCatalogByPower" element={<SortedCatalogByPower />} />
+                <Route path="/car/:id" element={<SinglePage />} />
                 <Route path="/Cart" element={<Cart />} />
             </Routes>
             <Footer />
