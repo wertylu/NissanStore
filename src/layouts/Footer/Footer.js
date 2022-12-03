@@ -7,7 +7,7 @@ import twitter from './../../icons/Twitter.svg'
 import logotype from "./../../icons/NissanLogo.png"
 import "./Footer.css"
 
-let rickroll = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'
+let rickroll = 'https://youtu.be/3_-a9nVZYjk?t=56'
 
 function Footer(){
     return(
