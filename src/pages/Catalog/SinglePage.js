@@ -23,6 +23,7 @@ function SinglePage() {
 
     return (
         <>
+
             {loading ?
                 <Loader/>
                 :
